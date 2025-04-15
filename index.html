@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vinylify - Vintage Music Experience</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/ScrollTrigger.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">Vinylify</div>
+            <div class="nav-links">
+                <a href="#features">Features</a>
+                <a href="#showcase">Library</a>
+                <a href="#testimonials">Reviews</a>
+                <a href="#cta">Pricing</a>
+            </div>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <div class="dust" id="dust"></div>
+        <div class="hero-content">
+            <div class="hero-text slide-in-left">
+                <h1>Experience Music with <span>Vintage</span> Charm</h1>
+                <p class="tagline">Rediscover the warmth and richness of analog sound in a digital world.</p>
+                <a href="player.html" class="btn">Start Listening</a>
+                <a href="#" class="btn btn-outline">Learn More</a>
+                
+                <div class="audio-controls">
+                    <button class="control-btn">
+                        <i class="fas">&#x23EE;</i>
+                    </button>
+                    <button class="control-btn play-btn">
+                        <i class="fas">&#x23F5;</i>
+                    </button>
+                    <button class="control-btn">
+                        <i class="fas">&#x23ED;</i>
+                    </button>
+                </div>
+                <div class="progress-container">
+                    <div class="progress-bar"></div>
+                </div>
+            </div>
+            <div class="record-player slide-in-right">
+                <div class="disc-container">
+                    <div class="disc">
+                        <img src="assets/disc.png" alt="Vinyl Record" class="vinyl-image">
+                        <div class="vinyl-grooves"></div>
+                        <div class="vinyl-reflection"></div>
+                        <div class="record-label">
+                            <span>VINYLIFY</span>
+                        </div>
+                        <div class="record-hole"></div>
+                    </div>
+                </div>
+                <div class="tonearm"></div>
+                <div class="tonearm-base"></div>
+            </div>
+        </div>
+    </section>
+
+    <section class="features" id="features">
+        <div class="container">
+            <h2 class="section-title fade-in">Retro Features, Modern Experience</h2>
+            <div class="features-grid">
+                <div class="feature-card fade-in">
+                    <div class="feature-icon">♫</div>
+                    <h3 class="feature-title">Vinyl Emulation</h3>
+                    <p class="feature-desc">Experience the warm crackling sound and imperfections that make vinyl records special, digitally enhanced for modern devices.</p>
+                </div>
+                <div class="feature-card fade-in">
+                    <div class="feature-icon">✨</div>
+                    <h3 class="feature-title">Visual Turntable</h3>
+                    <p class="feature-desc">Watch your music spin with our animated turntable visualization that responds to the rhythm and beat of your tracks.</p>
+                </div>
+                <div class="feature-card fade-in">
+                    <div class="feature-icon">📚</div>
+                    <h3 class="feature-title">Curated Collections</h3>
+                    <p class="feature-desc">Explore handpicked playlists inspired by different eras, from the roaring 20s to the psychedelic 70s.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="showcase" id="showcase">
+        <div class="container">
+            <h2 class="section-title fade-in">Explore Our Library</h2>
+            <div class="showcase-grid">
+                <div class="showcase-item scale-in">
+                    <div class="showcase-img" style="background-image: url('assets/jazz.png');"></div>
+                    <div class="showcase-content">
+                        <h3 class="showcase-title">Jazz Collection</h3>
+                        <p class="showcase-desc">Smooth saxophone and trumpet sounds from the golden age of jazz.</p>
+                        <div class="showcase-meta">
+                            <span>42 tracks</span>
+                            <span>1940-1955</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="showcase-item scale-in">
+                    <div class="showcase-img" style="background-image: url('assets/soul.png');"></div>
+                    <div class="showcase-content">
+                        <h3 class="showcase-title">Soul Classics</h3>
+                        <p class="showcase-desc">Heart-warming vocals and soulful melodies that defined an era.</p>
+                        <div class="showcase-meta">
+                            <span>38 tracks</span>
+                            <span>1960-1975</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="showcase-item scale-in">
+                    <div class="showcase-img" style="background-image: url('assets/golden.png');"></div>
+                    <div class="showcase-content">
+                        <h3 class="showcase-title">Golden Oldies</h3>
+                        <p class="showcase-desc">Nostalgic hits that bring back memories of simpler times.</p>
+                        <div class="showcase-meta">
+                            <span>55 tracks</span>
+                            <span>1950-1965</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="showcase-item scale-in">
+                    <div class="showcase-img" style="background-image: url('assets/vinyl.png');"></div>
+                    <div class="showcase-content">
+                        <h3 class="showcase-title">Vinyl Treasures</h3>
+                        <p class="showcase-desc">Rare finds and hidden gems from record collectors around the world.</p>
+                        <div class="showcase-meta">
+                            <span>27 tracks</span>
+                            <span>Various</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>    
+
+    <section class="cta" id="cta">
+        <div class="container">
+            <h2 class="fade-in">Ready to Step Back in Time?</h2>
+            <p class="fade-in">Unleash the sound of nostalgia. Vinylify brings your favorite records to life with premium features. Start your free trial today!</p>
+            <!-- Now the 'Try For Free' button will have a solid background -->
+            <a href="player.html" class="btn btn-solid">Try For Free</a>
+            <!-- The 'Premium' button will have an outline -->
+            <a href="#" class="btn btn-outline fade-in">Premium</a>
+        </div>
+    </section>
+    
+    <section class="testimonials" id="testimonials">
+        <div class="container">
+            <h2 class="section-title fade-in">What Our Listeners Say</h2>
+            <div class="testimonial-slider">
+                <div class="testimonial-track">
+                    <div class="testimonial">
+                        <p class="testimonial-text">Vinylify completely changed how I experience music. The vintage effects and warm sound take me back to my grandfather's record collection. It's like traveling through time!</p>
+                        <p class="testimonial-author">James Thompson</p>
+                    </div>
+                    <div class="testimonial">
+                        <p class="testimonial-text">As a music producer, I appreciate the attention to detail in the audio processing. The subtle crackles and warmth added to digital tracks is simply magical. Well done!</p>
+                        <p class="testimonial-author">Emma Rodriguez</p>
+                    </div>
+                    <div class="testimonial">
+                        <p class="testimonial-text">The visual turntable is mesmerizing! I often find myself staring at the spinning vinyl while listening to my favorite classics. Perfect blend of nostalgia and modern technology.</p>
+                        <p class="testimonial-author">Michael Chen</p>
+                    </div>
+                </div>
+            </div>
+            <div class="slider-nav">
+                <div class="slider-dot active"></div>
+                <div class="slider-dot"></div>
+                <div class="slider-dot"></div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-col">
+                <div class="footer-logo">Vinylify</div>
+                <p>Experience the magic of vintage music in a modern digital player. Bringing the warm sounds of yesteryear to your fingertips.</p>
+                <div class="social-links">
+                    <a href="#" class="social-icon">fb</a>
+                    <a href="#" class="social-icon">tw</a>
+                    <a href="#" class="social-icon">ig</a>
+                    <a href="#" class="social-icon">yt</a>
+                </div>
+            </div>
+            <div class="footer-col">
+                <h3 class="footer-heading">Quick Links</h3>
+                <div class="footer-links">
+                    <a href="#">Home</a>
+                    <a href="#features">Features</a>
+                    <a href="#showcase">Library</a>
+                    <a href="#testimonials">Reviews</a>
+                </div>
+            </div>
+            <div class="footer-col">
+                <h3 class="footer-heading">Support</h3>
+                <div class="footer-links">
+                    <a href="#">Help Center</a>
+                    <a href="#">Contact Us</a>
+                    <a href="#">FAQs</a>
+                    <a href="#">Privacy Policy</a>
+                </div>
+            </div>
+            <div class="footer-col">
+                <h3 class="footer-heading">Newsletter</h3>
+                <p>Subscribe to our newsletter for updates on new features and vintage collections.</p>
+                <form class="newsletter-form">
+                    <input type="email" placeholder="Your email address">
+                    <button type="submit" class="btn">Subscribe</button>
+                </form>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>&copy; 2025 Vinylify. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+<div id="leaf-container" class="particle-container"></div>
+<div id="music-notes-container" class="particle-container"></div>
+</html>
