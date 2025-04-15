@@ -271,14 +271,6 @@ document.addEventListener('DOMContentLoaded', function() {
       });
   }
   
-  // Mobile navigation toggle
-  const mobileBurger = document.querySelector('.mobile-burger') || document.createElement('div');
-  if (!document.querySelector('.mobile-burger')) {
-      mobileBurger.classList.add('mobile-burger');
-      mobileBurger.innerHTML = '☰';
-      document.querySelector('nav').appendChild(mobileBurger);
-  }
-  
   mobileBurger.addEventListener('click', () => {
       const navLinks = document.querySelector('.nav-links');
       navLinks.classList.toggle('show');
